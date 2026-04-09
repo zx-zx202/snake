@@ -19,7 +19,7 @@
 # 项目功能
 
 ## 1. 手势控制贪吃蛇
-`basic(2).py` 实现了一个简单的视觉交互小游戏：
+`basic.py` 实现了一个简单的视觉交互小游戏：
 - 调用电脑摄像头采集实时画面
 - 检测单只手
 - 提取食指指尖坐标
@@ -30,7 +30,7 @@
 这个功能的重点不是传统键盘控制，而是**用手势轨迹代替鼠标/方向键**，实现更直观的交互方式。
 
 ## 2. 中文手势识别演示
-`hand(1).py` 实现了一个带中文显示的手势识别程序，主要功能包括：
+`hand.py` 实现了一个带中文显示的手势识别程序，主要功能包括：
 - 检测最多两只手
 - 绘制手部关键点和骨架连线
 - 根据关键点位置关系判断手势类别
@@ -61,8 +61,8 @@
 └── README.md            # 项目说明文档
 ```
 
-> 注意：当前代码中 `basic(2).py` 默认读取的图片名是 `donut.png`。  
-> 如果你的资源文件名不是这个名字，比如是 `donut(1).png`，需要**手动改名为 `donut.png`**，或者修改代码中的图片路径。
+> 注意：当前代码中 `basic.py` 默认读取的图片名是 `donut.png`。  
+> 如果你的资源文件名不是这个名字，比如是 `donut.png`，需要**手动改名为 `donut.png`**，或者修改代码中的图片路径。
 
 ---
 
@@ -81,7 +81,7 @@
 - `numpy`
 - `Pillow`
 
-项目里还提供了完整的 `requirements(1).txt`，可以直接统一安装。fileciteturn0file2
+项目里还提供了完整的 `requirements.txt`，可以直接统一安装。fileciteturn0file2
 
 ---
 
@@ -115,7 +115,7 @@ pip install opencv-python numpy pillow mediapipe cvzone
 执行：
 
 ```bash
-python basic(2).py
+python basic.py
 ```
 
 程序运行后：
@@ -141,7 +141,7 @@ python basic(2).py
 执行：
 
 ```bash
-python hand(1).py
+python hand.py
 ```
 
 程序运行后：
@@ -185,7 +185,7 @@ python hand(1).py
 | call_me | 打电话 |
 | unknown | 未知手势 |
 
-这些类别直接定义在 `hand(1).py` 的 `self.gestures` 字典中。fileciteturn0file1
+这些类别直接定义在 `hand.py` 的 `self.gestures` 字典中。fileciteturn0file1
 
 ---
 
@@ -234,12 +234,12 @@ game = SnakeGameClass("donut.png")
 如果都加载失败，程序会退回默认字体，可能导致中文显示效果不理想。fileciteturn0file1
 
 ## 4. 依赖版本问题
-`requirements(1).txt` 中部分库版本比较老，尤其是 `mediapipe`、`opencv-python`、`tensorflow` 等，如果你本地 Python 版本较新，可能出现安装冲突。遇到这种情况，可以：
+`requirements.txt` 中部分库版本比较老，尤其是 `mediapipe`、`opencv-python`、`tensorflow` 等，如果你本地 Python 版本较新，可能出现安装冲突。遇到这种情况，可以：
 - 优先新建虚拟环境
 - 先安装最小依赖运行 Demo
 - 再根据实际需求补充其他库
 
-这个建议主要是因为当前两个 Demo 实际用到的库并没有 `requirements(1).txt` 里列得那么多。依赖文件内容可直接查看。fileciteturn0file2
+这个建议主要是因为当前两个 Demo 实际用到的库并没有 `requirements.txt` 里列得那么多。依赖文件内容可直接查看。fileciteturn0file2
 
 ---
 
