@@ -54,9 +54,9 @@
 
 ```bash
 .
-├── basic(2).py          # 手势控制贪吃蛇
-├── hand(1).py           # 中文手势识别演示
-├── requirements(1).txt  # 项目依赖
+├── basic.py          # 手势控制贪吃蛇
+├── hand.py           # 中文手势识别演示
+├── requirements.txt  # 项目依赖
 ├── donut.png            # 贪吃蛇食物图片资源
 └── README.md            # 项目说明文档
 ```
@@ -89,16 +89,16 @@
 
 ## 1. 克隆或下载项目
 将项目文件下载到本地后，确保以下文件在同一目录下：
-- `basic(2).py`
-- `hand(1).py`
-- `requirements(1).txt`
+- `basic.py`
+- `hand.py`
+- `requirements.txt`
 - `donut.png`
 
 ## 2. 安装依赖
 在项目目录打开终端，执行：
 
 ```bash
-pip install -r requirements(1).txt
+pip install -r requirements.txt
 ```
 
 如果你只想先运行当前两个 Demo，也可以按最小依赖安装：
